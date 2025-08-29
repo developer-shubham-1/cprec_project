@@ -1,0 +1,217 @@
+:root{
+  --primary: #bb6868;
+  --text: #1f2937;
+  --muted: #6b7280;
+  --bg: #e0e0e0;
+  --radius: 1.25rem;
+}
+
+*{box-sizing:border-box}
+
+body{
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif;
+  color: var(--text);
+  background: white;
+}
+
+
+/* ================================================Navbar=========================================== */
+.navbar-custom{
+  --bs-navbar-color: #334155;
+  --bs-navbar-hover-color: var(--primary);
+  --bs-navbar-brand-color: var(--text);
+  --bs-navbar-brand-hover-color: var(--primary);
+  background: #cec6c6;
+  backdrop-filter: blur(8px);
+}
+
+.nav-link{
+  font-size: 18px;
+  margin: 8px;
+}
+
+.nav-link.active{
+  color: var(--primary) !important;
+  font-weight: bold;
+}
+
+/* =========================================Banner======================================= */
+header.hero{
+  padding: 20px;
+  min-height: 80vh;
+  background: linear-gradient(#cec6c6e6, #e5babaa9), url(https://www.discoverphds.com/wp-content/uploads/2020/01/Turn-Your-PhD-Thesis-Into-a-Paper.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+header .text-gradient{
+  background: linear-gradient(90deg, var(--primary), #ddab69);
+  -webkit-background-clip:text;
+  background-clip:text;
+  color: transparent;
+}
+
+header .hero-card{
+  border-radius: var(--radius);
+  background: #fff;
+ 
+}
+
+@media (max-width: 576px){
+  .hero{ min-height: 60vh; }
+}
+
+
+.card{
+  border: 1px solid #edf2f7;
+  border-radius: var(--radius);
+}
+
+.badge{
+  border-radius: 999px;
+}
+
+
+#highlights .hover-lift{
+  transition: transform .2s ease, box-shadow .2s ease;
+}
+#highlights .hover-lift:hover{
+  transform: translateY(-4px);
+  box-shadow: 0 .5rem 1.25rem rgba(0,0,0,.08) !important;
+}
+
+/* ========================================About======================================= */
+.text-gradient {
+  background: linear-gradient(135deg, var(--primary), #d88d8d);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.team-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.team-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 20px rgba(0,0,0,0.12);
+}
+
+img.rounded-4 {
+  border-radius: 1rem !important;
+}
+
+
+/* ==============================================Contacts================================ */
+.map-placeholder{
+  background: linear-gradient(135deg, #eef2ff, #ffffff);
+  /* border: 1px dashed #94a3b8; */
+  min-height: 320px;
+}
+
+
+
+/* ==============================================Gallery======================================== */
+.gallery-img{
+  object-fit: cover;
+  width: 100%;
+  height: 200px;
+}
+
+.text-primary{
+  color: var(--primary) !important;
+}
+.btn-primary{
+  --bs-btn-bg: var(--primary);
+  --bs-btn-border-color: var(--primary);
+}
+
+
+
+
+/* ========================================Footer============================================== */
+footer{
+  background: linear-gradient(rgba(255, 255, 255),rgba(128, 128, 128, 0.8)), url(https://st2.depositphotos.com/2130737/8871/i/450/depositphotos_88710538-rough-texture-plastered-surface-of-black-color.jpg);
+}
+footer a{ 
+  color: rgb(73, 73, 73); 
+  text-decoration: none; 
+}
+footer a:hover{ 
+  color: black; 
+}
+
+  footer .newsletter-box {
+    transition: all 0.3s ease-in-out;
+  }
+  footer .newsletter-box:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+  }
+  footer .newsletter-box input:focus {
+    outline: none;
+    box-shadow: 0 0 8px rgba(65, 105, 225, 0.5);
+  }
+
+
+  /* =====================Latest News============================== */
+   #latest-news .border-bb6868 {
+    border-color: var(--primary) !important;
+  }
+
+  #latest-news .text-bb6868 {
+    color: var(--primary) !important;
+  }
+
+  #latest-news .highlight-news {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  #latest-news .highlight-news:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 20px rgba(0,0,0,0.1);
+  }
+
+  #latest-news .hover-news:hover {
+    background-color: rgba(253, 141, 141, 0.1) !important;
+    border-radius: 10px;
+    cursor: pointer;
+  }
+
+
+  /* ==============================Publication============================================ */
+   #publications .pub-card-link {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+#publications .pub-card-link:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 1rem 2rem rgba(0,0,0,0.08) !important;
+}
+#publications .card-img-top {
+    height: 200px;
+    object-fit: cover;
+}
+#publications .pub-type-badge {
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+    padding: 0.3rem 0.8rem;
+    font-size: 0.75rem;
+    font-weight: 600;
+    border-radius: 50rem;
+    color: #fff;
+    text-transform: uppercase;
+}
+#publications .pub-type-badge.thesis {
+    background-color: var(--primary);
+}
+#publications .pub-type-badge.journal {
+    background-color: var(--primary);
+}
+#publications .nav-pills .nav-link {
+    background-color: #e9ecef;
+    color: var(--bs-dark);
+    font-weight: 500;
+}
+#publications .nav-pills .nav-link.active {
+    background-color: var(--primary);
+    color: #fff !important;
+}

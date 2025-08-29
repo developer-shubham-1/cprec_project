@@ -1,0 +1,48 @@
+// This data can be easily updated or replaced with an API call
+const publications = [
+    {
+      type: 'thesis',
+      title: 'Federated Learning for Rural Health Diagnostics',
+      description: 'A privacy-preserving approach to training diagnostic models without sharing patient data.',
+      author: 'P. Adhikari',
+      year: '2025',
+      subject: 'Computer Science',
+      image: 'assets/img/thesis.jpg',
+    },
+    {
+      type: 'journal',
+      title: 'Glacial Lake Outburst Flood Risk Mapping',
+      description: 'Remote sensing and hydrological modeling for hazard assessment in the Himalayas.',
+      author: 'R. Tamang',
+      year: '2024',
+      subject: 'Environmental',
+      image: 'assets/img/journals.avif',
+    },
+    {
+      type: 'thesis',
+      title: 'Low-Cost Air Quality Sensors for Urban Monitoring',
+      description: 'Design and calibration of affordable PM2.5 sensors for city-wide deployments.',
+      author: 'S. Karki',
+      year: '2023',
+      subject: 'Engineering',
+      image: 'assets/img/thesis.jpg',
+    },
+    {
+      type: 'journal',
+      title: 'The Economic Impact of E-commerce in Developing Nations',
+      description: 'An analysis of digital marketplaces and their effect on small and medium enterprises.',
+      author: 'L. Sharma',
+      year: '2024',
+      subject: 'Economics',
+      image: 'assets/img/journals.avif',
+    },
+    {
+      type: 'thesis',
+      title: 'Utilizing AI for Personalized Education Pathways',
+      description: 'A study on adaptive learning systems and their effectiveness in improving student outcomes.',
+      author: 'N. Gurung',
+      year: '2025',
+      subject: 'Education',
+      image: 'assets/img/thesis.jpg',
+    },
+];
